@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questão 7</title>
+</head>
+<body>
+    <div class="navBar">
+        <div class="container">
+            <ul>
+                <a href="questao4.html"><li>Questão 4</li></a>
+                <a href="questao5.html"><li>Questão 5</li></a>
+                <a href="questao6.html"><li>Questão 6</li></a>
+                <a href="questao7.html"><li>Questão 7</li></a>
+                <a href="questao8.html"><li>Questão 8</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>
+            7) Rotações sucessivas: escrever um programa que recebe
+            o ângulo teta da primeira rotação R1, e o ângulo alfa
+            da segunda rotação R2 a serem aplicados sobre
+            o ponto P=(6,6,8). Plotar as novas coordenadas
+        </p>
+
+        <form>
+            <label>Angulo 1: <input type="number" id="angZ1"></label><br>
+            <label>Angulo 2: <input type="number" id="angZ2"></label><br>
+        </form>
+        <button onClick="RotacaoSucR1R2()">Rotacionar R1.R2</button>
+        <button onClick="RotacaoSucR2R1()">Rotacionar R2.R1</button>
+    </div>
+    <div id='myChart'></div>
+
+    <script src='https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+    <script src='scriptQuestao4.js'></script>
+
+</body>
+</html>

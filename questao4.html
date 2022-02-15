@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questão 4</title>
+</head>
+<body>
+    <div class="navBar">
+        <div class="container">
+            <ul>
+                <a href="questao4.html"><li>Questão 4</li></a>
+                <a href="questao5.html"><li>Questão 5</li></a>
+                <a href="questao6.html"><li>Questão 6</li></a>
+                <a href="questao7.html"><li>Questão 7</li></a>
+                <a href="questao8.html"><li>Questão 8</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <p>4) Translação: escrever um programa de computador que
+            recebe as coordenadas do ponto P a ser transladado.
+            A translação deve ser de 2 unidades em x, 3 unidades
+            em y, e 5 unidades em z. Apresentar a matriz de
+            transformação e plotar as novas coordenadas.
+        </p>
+    
+        <form>
+            <label>Coordena X: <input type="number" id="cordX"></label><br>
+            <label>Coordena Y: <input type="number" id="cordY"></label><br>
+            <label>Coordena Z: <input type="number" id="cordZ"></label><br>
+        </form>
+        <button onClick="translacaoFixa(2, 3, 5)">Transladar</button><br>
+        <div class="matrizTransicao"> </div>
+    </div>
+    <div id='myChart'></div>
+
+    <script src='https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+    <script src='scriptQuestao4.js'></script>
+
+</body>
+</html>

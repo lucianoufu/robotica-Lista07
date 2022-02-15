@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questão 5</title>
+</head>
+<body>
+    <div class="navBar">
+        <div class="container">
+            <ul>
+                <a href="questao4.html"><li>Questão 4</li></a>
+                <a href="questao5.html"><li>Questão 5</li></a>
+                <a href="questao6.html"><li>Questão 6</li></a>
+                <a href="questao7.html"><li>Questão 7</li></a>
+                <a href="questao8.html"><li>Questão 8</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>5)Translações sucessivas: escrever um programa que
+            recebe x0, y0 e z0 da matriz de transformação T0,
+            x1, y1 e z1 da matriz de transformação T1.
+            Realizar a transformação sucessiva T0.T1 e a
+            transformação T1.T0 sobre o ponto P=(3,4,7).
+            Apresentar os resultados destas duas transformações
+            sucessivas.
+        </p>
+
+        <form>
+            <label>Coordena X1: <input type="number" id="transX1"></label><br>
+            <label>Coordena Y1: <input type="number" id="transY1"></label><br>
+            <label>Coordena Z1: <input type="number" id="transZ1"></label><br>
+            <label>Coordena X2: <input type="number" id="transX2"></label><br>
+            <label>Coordena Y2: <input type="number" id="transY2"></label><br>
+            <label>Coordena Z2: <input type="number" id="transZ2"></label><br>
+        </form>
+        <button onClick="translacaoPontoFixo()">Transladar</button>
+    </div>
+    <div id='myChart'></div>
+
+    <script src='https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+    <script src='scriptQuestao4.js'></script>
+
+</body>
+</html>

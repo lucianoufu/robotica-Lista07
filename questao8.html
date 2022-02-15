@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questão 8</title>
+</head>
+<body>
+    <div class="navBar">
+        <div class="container">
+            <ul>
+                <a href="questao4.html"><li>Questão 4</li></a>
+                <a href="questao5.html"><li>Questão 5</li></a>
+                <a href="questao6.html"><li>Questão 6</li></a>
+                <a href="questao7.html"><li>Questão 7</li></a>
+                <a href="questao8.html"><li>Questão 8</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>
+            8) Translação e rotação sucessivas: escrever um programa
+            que recebe x e y da matriz de translação T e
+            o ângulo teta da matriz de rotação R a serem aplicados
+            sobre o ponto P=(4,5,7). Plotar o resultado da
+            transformação sucessiva T.R e o resultado da
+            transformação sucessiva R.T.
+        </p>
+
+        <form>
+            <label>Coordena X1: <input type="number" id="transX1"></label><br>
+            <label>Coordena Y1: <input type="number" id="transY1"></label><br>
+            <label>Coordena Z1: <input type="number" id="transZ1"></label><br>
+            <label>Angulo: <input type="number" id="angZ"></label><br>
+        </form>
+        <button onClick="translacaoRotacaoSucRT()">Rotacionar e Transladar(RT)</button>
+        <button onClick="translacaoRotacaoSucTR()">Transladar e Rotacionar(TR)</button>
+    </div>
+    <div id='myChart'></div>
+
+    <script src='https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+    <script src='scriptQuestao4.js'></script>
+
+</body>
+</html>
